@@ -33,8 +33,8 @@ public class Expire : MonoBehaviour {
 		// If it's been around a while
 		timeAlive += Time.deltaTime;
 		
-		//if (timeAlive > timeToExpire)
-			//Die ();
+		if (timeAlive > timeToExpire)
+			Die ();
 		
 		// If it falls off the floor
 		if (transform.position.y < 0)
